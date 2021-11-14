@@ -8,10 +8,13 @@ for key, value in counties_dict.items():
 
 # Skill Drill
 # Create a filename variable to a direct or indirect path to the file.
+import csv
+import os
+
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 # Using the with statement open the file as a text file.
 with open(file_to_save, "w") as txt_file:
 
     # Write some data to the file.
-    txt_file.write("Counties in the Election")
-    txt_file.write("\n----------\nArapahoe\nDenver\nJefferson")
+    # txt.file.write("Counties in the Election")
+    txt_file.write("\nCounties in the Election\n----------\nArapahoe\nDenver\nJefferson")
